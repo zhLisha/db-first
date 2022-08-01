@@ -1,0 +1,14 @@
+Table Name: second_hand_cars
+
+id: number(BIGINT) - PRIMARY KEY(Unique, Autoincrement, NotNull, Index)
+brand: string(VARCHAR(30)) - NOTNULL - INDEX
+name: string(VARCHAR(30)) - NOTNULL
+license_plate: string(VARCHAR(10)) - NOTNULL - UNIQUE
+traveled_km: number(MEDIUMINT) - NULL
+wheels: number(TINYINT) - NULL
+price: number(MEDIUMINT) - NOTNULL
+year: YEAR - NULL
+restaured: boolean(TINYINT) - NULL
+warranty: string(VARCHAR(30)) - NULL
+image: string(TEXT) - DEFAULT(https://serviziocarro.it/images/default_image.jpg)
+for_family: boolean(TINYINT) - NULL
